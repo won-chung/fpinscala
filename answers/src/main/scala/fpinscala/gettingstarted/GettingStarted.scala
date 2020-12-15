@@ -81,7 +81,7 @@ object AnonymousFunctions {
 
   // Some examples of anonymous functions:
   def main(args: Array[String]): Unit = {
-    println(formatResult("absolute value", -42, abs))
+    println(formatResult("absolute value", -42, abs))ca
     println(formatResult("factorial", 7, factorial))
     println(formatResult("increment", 7, (x: Int) => x + 1))
     println(formatResult("increment2", 7, (x) => x + 1))
@@ -176,5 +176,5 @@ object PolymorphicFunctions {
   // Exercise 5: Implement `compose`
 
   def compose[A,B,C](f: B => C, g: A => B): A => C =
-    a => f(g(a))
+    (a) => f(g(a))
 }
